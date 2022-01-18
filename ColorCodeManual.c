@@ -17,7 +17,7 @@ void PrintColorCode(void)
   {
     colorPair = GetColorFromPairNumber(PairNum);
     ColorPairToString(&colorPair, colorPairNames);
-    printf("%d\t%s\n",PairNum,colorPairNames);
+    printf("%d%s\n",PairNum,colorPairNames);
   }
   
   
