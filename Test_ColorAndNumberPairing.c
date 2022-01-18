@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include "ColorAndPairingLibrary.h"
 #include "Test_ColorAndNumberPairing.h"
 
 void testNumberToPair(int pairNumber,
