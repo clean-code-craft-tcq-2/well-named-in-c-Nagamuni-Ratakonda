@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "Test_ColorAndNumberPairing.h"
 #include "ColorAndPairingLibrary.h"
+#include "Test_ColorAndNumberPairing.h"
 
 int main() {
     
