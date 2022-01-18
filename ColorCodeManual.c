@@ -6,16 +6,18 @@ void PrintColorCode(void)
   int PairNum;
   int TotalColorPairs = 25;
   ColorPair colorPair;
+  char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
   
   printf("/***********************************\n");
   printf("*********Color Code Manual**********\n");
   printf("************************************/\n");
-  printf("PAIR NO.\t MAJOR COLOR\t MINOR COLOR\n");
+  printf("Pair no.\t Major color\t Minor color\n");
   
   for(PairNum = 1; PairNum <= TotalColorPairs; PairNum++)
   {
     colorPair = GetColorFromPairNumber(PairNum);
-    printf("%d\t%d\t%d\n",PairNum,colorPair.majorColor,colorPair.minorColor);
+    ColorPairToString(&colorPair, colorPairNames);
+    printf("%d\t%s\n",PairNum,colorPairNames);
   }
   
   
